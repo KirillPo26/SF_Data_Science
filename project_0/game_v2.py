@@ -1,4 +1,7 @@
 import numpy as np
+a = np.int64(25)
+
+
 
 def random_predict(number:int=1) -> int:
     """Рандомно угадываем число

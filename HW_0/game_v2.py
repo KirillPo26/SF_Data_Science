@@ -8,10 +8,8 @@ import numpy as np
 def random_predict(number) -> int:
     
     """Рандомно угадываем число
-
     Args:
         number (int, optional): Загаданное число. Defaults to 1.
-
     Returns:
         int: Число попыток
     """
@@ -35,10 +33,8 @@ def random_predict(number) -> int:
 
 def score_game(random_predict) -> int:
     """За какое количество попыток в среднем из 1000 подходов угадывает наш алгоритм
-
     Args:
         random_predict ([type]): функция угадывания
-
     Returns:
         int: среднее количество попыток
     """

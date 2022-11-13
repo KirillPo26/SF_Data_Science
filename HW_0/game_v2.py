@@ -1,40 +1,47 @@
-#игра загадай число компьютер сам загадывает и сам угадывает
-#from itertools import count
+"""Игра угадай число
+Компьютер сам загадывает и сам угадывает число
+"""
 
 import numpy as np
 
-def random_predict(number:int=1)-> int:
-    count = 0
-    min_n = 1 # Минимальное значение рассматриваемого интервала
-    max_n = 100 # Максимальное значение рассматриваемого интервала
-    md = 0
-    predict_number = int(np.random.randint(1, 101))
-    '''while True:
+
+def random_predict(number) -> int:
+    
+    """Рандомно угадываем число
+
+    Args:
+        number (int, optional): Загаданное число. Defaults to 1.
+
+    Returns:
+        int: Число попыток
+    """
+    predict_number = np.random.randint(1, 101) # загадываем рандомное число, используя генератор рандомных чисел
+    count = 0 # Переменная счетчик
+    min_num = 1 # Минимальное значение рассматриваемого интервала
+    max_num = 100 # Максимальное значение рассматриваемого интервала
+    while True:
         count += 1
         if predict_number > number:
-           max_n = predict_number 
-           predict_number = round((max_n + min_n) // 2)
+            max_num = predict_number - 1
+            predict_number = (max_num + min_num) // 2
         elif predict_number < number:
-           min_n = predict_number
-           predict_number = round((max_n + min_n) // 2)
-        elif predict_number is None:
-            pass
+            min_num = predict_number + 1
+            predict_number = (max_num + min_num) // 2
         else:
-            break
-        return count'''
-    while predict_number != number:
-        count += 1
-        if predict_number > number:
-           max_n = predict_number 
-           predict_number = (max_n + min_n) // 2 
-        elif predict_number < number:
-           min_n = predict_number 
-           predict_number = (max_n + min_n) // 2 
-        else:
-            break
-    return count
+            #print(f'Компьютер угадал загаданное число за {count} попыток. Это число {number}')
+            break # конец игры и выход из цикла
+    return(count)
+# print(f'Количество попыток: {random_predict(number)}')
 
 def score_game(random_predict) -> int:
+    """За какое количество попыток в среднем из 1000 подходов угадывает наш алгоритм
+
+    Args:
+        random_predict ([type]): функция угадывания
+
+    Returns:
+        int: среднее количество попыток
+    """
 
     count_ls = []
     np.random.seed(1)
@@ -47,6 +54,8 @@ def score_game(random_predict) -> int:
     print(f'ваш алгоритм угадывает в среднем за: {score} попыток')
     return(score)  
 
-print(f'количество попыток: {random_predict(10)}')   
+#print(f'количество попыток: {random_predict(10)}')   
 
-score_game(random_predict)
+# RUN
+if __name__ == '__main__':
+    score_game(random_predict)

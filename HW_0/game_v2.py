@@ -16,9 +16,9 @@ def random_predict(number) -> int:
         int: Число попыток
     """
     predict_number = np.random.randint(1, 101) # загадываем рандомное число, используя генератор рандомных чисел
-    count = 0 # Переменная счетчик
-    min_num = 1 # Минимальное значение рассматриваемого интервала
-    max_num = 100 # Максимальное значение рассматриваемого интервала
+    count = 0 # Начальное значение счетчика
+    min_num = 1 # Минимальное значение в интервале
+    max_num = 100 # Максимальное значение в интервале
     while True:
         count += 1
         if predict_number > number:
@@ -53,8 +53,6 @@ def score_game(random_predict) -> int:
     score =int(np.mean(count_ls))
     print(f'ваш алгоритм угадывает в среднем за: {score} попыток')
     return(score)  
-
-#print(f'количество попыток: {random_predict(10)}')   
 
 # RUN
 if __name__ == '__main__':

@@ -1,0 +1,1 @@
+Файл с исходными данными выложен по ссылке:  https://drive.google.com/drive/folders/1py3ifdSKQhzYRfcQyCjMbDmb_nZXoSkH?usp=share_link

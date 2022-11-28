@@ -1,0 +1,23 @@
+ERROR: 2022-11-27 13:14:12,306: Data shape is incorrect!
+ERROR: 2022-11-27 13:14:12,306: Data shape is incorrect!
+ERROR: 2022-11-27 13:14:12,306: Data shape is incorrect!
+ERROR: 2022-11-27 13:17:56,203: Data shape is incorrect!
+ERROR: 2022-11-27 13:17:56,203: Data shape is incorrect!
+ERROR: 2022-11-27 13:17:56,203: Data shape is incorrect!
+ERROR: 2022-11-27 13:17:56,203: Data shape is incorrect!
+INFO: 2022-11-27 13:23:58,378: Data
+INFO: 2022-11-27 13:24:00,247: Data shape (110527, 14)
+INFO: 2022-11-27 13:24:01,616: Percentage of women: 0.653882342398853
+INFO: 2022-11-27 13:24:03,400: Percentage of women: 0.653882342398853
+INFO: 2022-11-27 13:24:05,205: Percentage of men: 0.346117657601147
+ERROR: 2022-11-27 13:24:07,510: Data shape is incorrect!
+WARNING: 2022-11-27 15:13:16,848: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 15:13:31,467: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 15:14:18,483: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 15:14:47,537: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 15:16:32,150: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 16:21:06,951: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 16:21:21,522: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 16:38:10,422: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 16:38:24,962: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2022-11-27 16:38:43,454: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
